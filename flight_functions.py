@@ -18,7 +18,7 @@ def view_flights(flights_list):
     # display table footer
     print(f"-"*40)
 
-def book_flight(file_name, passenger_name, flights_list, bookings_list):
+def book_flight(passenger_name, file_name, flights_list, bookings_list):
     '''
     function name: book_flights()
     description: user inputs flight number function checks file 
@@ -135,17 +135,17 @@ def cancel_booking(passenger_name, file_name, flights_list, bookings_list):
                     flight[3] = str(flight[3])      
 
                     # call save flights function
-                    save_flights(file_name, return_seats)
+                    save_flights(file_name, flights_list)
 
                     # remove booking from booking_list
                     bookings_list.remove(booking)
 
                     # display booking success message once flight is cancelled
-                    print(f"Booking for {flight_no} cancelled successfully.")
+                    print(f"Successfully canceled booking for flight {flight_no}")
 
     # error message if booking not found
     if booking_found == False:
-        print('Booking not found.')
+        print('No booking found for the given flight number.')
 
 def load_flights(file_name):
     '''
