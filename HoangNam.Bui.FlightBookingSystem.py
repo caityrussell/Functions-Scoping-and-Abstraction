@@ -1,6 +1,6 @@
 """
 Program: HoangNam.Bui.Flight Booking System.py
-Student Name: Hoang Nam Bui
+Student Name: Hoang Nam Bui, Mehak
 Course: CPRG 216 - Object-Oriented Programming 1
 Assignment: Functions, Scoping and Abstraction
 Date: 2026-03-19
